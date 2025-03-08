@@ -26,4 +26,16 @@ class Main {
         Shape square = new Square(side);
         printShapeDetails(square, "Square");
 
+        System.out.println("Enter side 1:- ");
+        double a = Double.parseDouble(scan.nextLine());
+
+        System.out.println("Enter side 2:- ");
+        double b = Double.parseDouble(scan.nextLine());
+
+        System.out.println("Enter side 3:- ");
+        double c = Double.parseDouble(scan.nextLine());
+
+        Shape triangle = new Triangle(a, b, c);
+        printShapeDetails(triangle, "Triangle");
+
         
