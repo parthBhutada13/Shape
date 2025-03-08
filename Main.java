@@ -20,4 +20,10 @@ class Main {
         Shape circle = new Circle(radius);
         printShapeDetails(circle, "Circle");
 
+        System.out.println("Enter side:- ");
+        double side = Double.parseDouble(scan.nextLine());
+
+        Shape square = new Square(side);
+        printShapeDetails(square, "Square");
+
         
