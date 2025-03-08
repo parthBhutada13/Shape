@@ -50,4 +50,9 @@ class Main {
         Shape cuboid = new Cuboid(l, br, h);
         printShapeDetails(cuboid, "Cuboid");
 
-	
+	System.out.println("Enter side length:- ");
+	double sideLength = Double.parseDouble(scan.nextLine());
+
+	Shape cube = new Cube(sideLength);
+	printShapeDetails(cube, "Cube");
+	}
