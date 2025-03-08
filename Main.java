@@ -38,4 +38,16 @@ class Main {
         Shape triangle = new Triangle(a, b, c);
         printShapeDetails(triangle, "Triangle");
 
-        
+        System.out.println("Enter length:- ");
+        double l = Double.parseDouble(scan.nextLine());
+
+        System.out.println("Enter breadth:- ");
+        double br = Double.parseDouble(scan.nextLine());
+
+        System.out.println("Enter height:- ");
+        double h = Double.parseDouble(scan.nextLine());
+
+        Shape cuboid = new Cuboid(l, br, h);
+        printShapeDetails(cuboid, "Cuboid");
+
+	
