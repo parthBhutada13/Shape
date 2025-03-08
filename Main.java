@@ -14,4 +14,10 @@ class Main {
         Shape rectangle = new Rectangle(length, width);
         printShapeDetails(rectangle, "Rectangle");
 
+        System.out.println("Enter radius:- ");
+        double radius = Double.parseDouble(scan.nextLine());
+
+        Shape circle = new Circle(radius);
+        printShapeDetails(circle, "Circle");
+
         
