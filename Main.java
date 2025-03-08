@@ -56,3 +56,16 @@ class Main {
 	Shape cube = new Cube(sideLength);
 	printShapeDetails(cube, "Cube");
 	}
+
+	// Helper method to print shape details
+	private static void printShapeDetails(Shape shape, String shapeName) {
+	System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+	System.out.println("Area of " + shapeName + ":- " + shape.calculateArea());
+	System.out.println("Perimeter of " + shapeName + ":- " + shape.calculatePerimeter());
+	if (shape instanceof Cube || shape instanceof Cuboid) {
+		System.out.println("Volume of " + shapeName + ":- " + shape.calculateVolume());
+	}
+	System.out.println("Sides of " + shapeName + ":- " + shape.getNumSides());
+	System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+	}
+}
